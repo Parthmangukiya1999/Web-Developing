@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+    <table>
+        <form action="/action_page.php">
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Contact information:</legend>                        
+                        <label for="fname">First name:</label>
+                        <input type="text" id="fname" name="fname" placeholder="First name"><br>
+                        <label for="lname">Last Name:</label>
+                        <input type="text" id="lname" name="lname" placeholder="Last name"><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Email"><br>
+                        <label for="telephone">Telephone:</label>
+                        <input type="telphone" id="telephone" name="telephone" placeholder="Telephone"><br>
+                        <label for="preferredContact">Preferred Contact Method:</label>
+                        <input type="radio" id="emailContact" name="preferredContact" value="email">
+                        <label for="emailContact">Email</label>
+                        <input type="radio" id="telephoneContact" name="preferredContact" value="telephone">
+                        <label for="telephoneContact">Telephone</label>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Feedback:</legend>
+                        
+                        <label for="subject">Message subject:</label>
+                        <input type="text" id="subject" name="subject" placeholder="Message subject"><br>
+                        
+                        <textarea id="message" name="message" rows="15" cols="50"></textarea><br><br>
+                        
+                        <label for="attach">Attach a file:</label>
+                        <input type="file" id="attach" name="attach" placeholder="Browse...">
+                        <hr>
+                        <input type="submit" value="Send">
+                    </fieldset>
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>
